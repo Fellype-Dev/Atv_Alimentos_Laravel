@@ -1,66 +1,68 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+Sistema de Gestão de Alimentos
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+📝 Descrição
+Um sistema web desenvolvido em Laravel para gerenciamento de estoque de alimentos, com controle de validade e quantidades. Ideal para despensas domésticas, pequenos comércios ou qualquer pessoa que deseje organizar seus alimentos de forma eficiente.
 
-## About Laravel
+🎨 Paleta de Cores
+A aplicação utiliza uma paleta sofisticada e moderna:
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+#202030 (Fundo principal)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+#A99F96 (Elementos secundários)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+#1C77C3 (Destaques)
 
-## Learning Laravel
+#004F2D (Ações positivas)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+#F02D3A (Alertas)
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+✨ Funcionalidades Principais:
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+📋 Cadastro de alimentos com nome, quantidade, categoria e validade
+🔍 Filtro inteligente por validade próxima
+⚠️ Alertas visuais para estoque baixo e produtos perto do vencimento
+✏️ Edição fácil dos itens cadastrados
+🗑️ Exclusão segura com confirmação
+📱 Design responsivo que funciona em qualquer dispositivo
 
-## Laravel Sponsors
+🛠️ Tecnologias Utilizadas:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+PHP 8+ com framework Laravel
+Bootstrap 5 para estilos e componentes
+Bootstrap Icons para ícones intuitivos
+Carbon para manipulação de datas
+MySQL para armazenamento de dados
 
-### Premium Partners
+🚀 Como Executar o Projeto:
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+Pré-requisitos:
+PHP 8.0+
+Composer
+MySQL
+Node.js (opcional para assets)
 
-## Contributing
+Instalação:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+bash
+git clone https://github.com/seu-usuario/foodstock-manager.git
+cd foodstock-manager
+composer install
+cp .env.example .env
+php artisan key:generate
 
-## Code of Conduct
+Configuração do Banco:
+Crie um banco MySQL
+Configure no .env:
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+ini
+DB_DATABASE=nome_do_banco
+DB_USERNAME=usuario
+DB_PASSWORD=senha
+Execução:
 
-## Security Vulnerabilities
+bash
+php artisan migrate
+php artisan serve
+Acesse:
+Abra no navegador: http://localhost:8000
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
